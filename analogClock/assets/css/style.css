@@ -1,0 +1,7 @@
+.clock {
+    background: url(../../assets/img/clock.gif);
+    background-size: contain;
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+}
