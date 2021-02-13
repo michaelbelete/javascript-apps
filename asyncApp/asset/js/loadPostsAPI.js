@@ -1,6 +1,7 @@
 // UI Vars 
 const postDiv3 = document.getElementById('thePosts');
-//Load Every thing ....
+const loading = document.querySelector('#loader')
+    //Load Every thing ....
 document.addEventListener("DOMContentLoaded", () => {
     //load_fromPlaceHolder();
     loadDataNew()
@@ -91,8 +92,8 @@ function loadDataNew() {
 
 `;
             });
+            loading.classList.remove('active')
             postDiv3.innerHTML = output;
-            return true
         })
         .catch(function(err) {
             console.log(err);

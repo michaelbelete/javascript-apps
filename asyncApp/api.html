@@ -46,18 +46,19 @@
         </div>
 
         <!-- All Blogs  -->
-        <div class="ui top attached segment">
+        <div class="ui  top attached segment">
 
             <div class="ui green message">
                 <i class="star icon"></i> All Blogs From JSON placeholder API
             </div>
             <div class="ui segment">
-                <div class="ui dimmer">
-                    <div class="ui active loader"></div>
-                </div>
 
-                <div class="ui divided items" id="thePosts"></div>
+                <div class="ui active dimmer" id="loader" style="height: 200px;">
+                    <div class="ui text loader">Loading</div>
+                </div>
             </div>
+            <div class="ui divided items" id="thePosts"></div>
+            <!-- </div> -->
         </div>
         <!-- End of All Blogs  -->
         <!--   End of Container    -->
