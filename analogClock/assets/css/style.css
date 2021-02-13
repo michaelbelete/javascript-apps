@@ -15,9 +15,6 @@
 }
 
 .line {
-    width: 16%;
-    height: 4px;
-    background: black;
     position: absolute;
     top: 51%;
     right: 77%;
@@ -25,4 +22,22 @@
     transform: rotate( 90deg);
     transition: all 0.05s;
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hour {
+    width: 12%;
+    height: 5px;
+    background: black;
+}
+
+.minute {
+    width: 14%;
+    height: 4px;
+    background: black;
+}
+
+.second {
+    width: 16%;
+    height: 2px;
+    background: rgb(255, 0, 0);
 }
