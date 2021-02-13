@@ -1,0 +1,8 @@
+.slide-img {
+    display: none;
+    animation: reveal .5s ease-in-out;
+}
+
+.slide-img.active {
+    display: block;
+}
