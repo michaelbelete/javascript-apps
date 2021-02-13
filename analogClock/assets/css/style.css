@@ -1,5 +1,10 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1532498664269-63b8ab6adc73?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1268&q=80);
+    background-size: cover;
+}
+
 .clock {
-    background: url(../../assets/img/clock.gif);
+    background: url(../../assets/img/clock.png);
     background-size: contain;
     width: 100%;
     height: 200px;

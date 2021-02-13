@@ -1,13 +1,9 @@
 // UI Vars 
 const postDiv3 = document.getElementById('thePosts');
-const loader = document.getElementById('loader');
 //Load Every thing ....
 document.addEventListener("DOMContentLoaded", () => {
     //load_fromPlaceHolder();
-    loader.classList.add("active")
-    if(loadDataNew()){
-        loader.classList.remove("active")
-    }
+    loadDataNew()
 });
 
 
