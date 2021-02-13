@@ -1,10 +1,13 @@
 // UI Vars 
 const postDiv3 = document.getElementById('thePosts');
-
+const loader = document.getElementById('loader');
 //Load Every thing ....
 document.addEventListener("DOMContentLoaded", () => {
     //load_fromPlaceHolder();
-    loadDataNew();
+    loader.classList.add("active")
+    if(loadDataNew()){
+        loader.classList.remove("active")
+    }
 });
 
 
@@ -93,9 +96,11 @@ function loadDataNew() {
 `;
             });
             postDiv3.innerHTML = output;
+            return true
         })
         .catch(function(err) {
             console.log(err);
+            return false
         });
 
 }
